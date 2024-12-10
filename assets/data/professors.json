@@ -1,0 +1,33 @@
+[
+    {
+      "name": "Michael Shindler",
+      "rating": 4.5,
+      "reviews": 32,
+      "link": "https://www.ratemyprofessors.com/ShowRatings.jsp?tid=12345"
+    },
+    {
+      "name": "Crista Lopes",
+      "rating": 4.8,
+      "reviews": 40,
+      "link": "https://www.ratemyprofessors.com/ShowRatings.jsp?tid=67890"
+    },
+    {
+      "name": "Alex Nicolau",
+      "rating": 4.3,
+      "reviews": 25,
+      "link": "https://www.ratemyprofessors.com/ShowRatings.jsp?tid=11223"
+    },
+    {
+      "name": "Pattis",
+      "rating": 4.0,
+      "reviews": 15,
+      "link": "https://www.ratemyprofessors.com/ShowRatings.jsp?tid=44556"
+    },
+    {
+      "name": "Debra Richardson",
+      "rating": 4.7,
+      "reviews": 18,
+      "link": "https://www.ratemyprofessors.com/ShowRatings.jsp?tid=33478"
+    }
+  ]
+  
