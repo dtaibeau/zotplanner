@@ -11,19 +11,30 @@
     <h1>Welcome to ZotPlanner</h1>
   </header>
 
-  <main id="app">
+<main id="app">
+
     <!-- Course Search Section -->
     <section id="courseSearchSection">
       <h2>Course Search</h2>
+      <label for="course-input">Enter Course Code:</label>
       <input
         type="text"
         id="courseSearchInput"
         placeholder="Enter course code or title (e.g., COMPSCI 161)"
-      />git
+      />
       <button id="courseSearchButton">Search</button>
       <div id="courseResults"></div>
     </section>
-  </main>
+
+    <!-- Prerequisite Tracker Section -->
+    <section id="prerequisite-tracker">
+        <h2>Prerequisite Tracker</h2>
+        <label for="course-input">Enter Course Code:</label>
+        <input type="text" id="course-input" placeholder="e.g., COMPSCI 161" />
+        <button id="check-prerequisites">Check Prerequisites</button>
+        <div id="prerequisite-results"></div>
+    </section>
+ </main>
 
   <!-- JavaScript Files -->
   <script src="assets/js/feature1.js"></script>
