@@ -1,0 +1,71 @@
+{
+    "courses": [
+      {
+        "courseCode": "COMPSCI 161",
+        "courseTitle": "Design and Analysis of Algorithms",
+        "description": "Introduction to the design and analysis of algorithms. Covers topics such as sorting, searching, dynamic programming, and graph algorithms.",
+        "prerequisites": ["COMPSCI 132", "COMPSCI 143A"]
+      },
+      {
+        "courseCode": "COMPSCI 143A",
+        "courseTitle": "Principles of Operating Systems",
+        "description": "Introduction to the principles of operating systems, including processes, synchronization, scheduling, file systems, and memory management.",
+        "prerequisites": ["COMPSCI 45C"]
+      },
+      {
+        "courseCode": "COMPSCI 45C",
+        "courseTitle": "Programming in C/C++",
+        "description": "Introduction to programming in C/C++. Covers memory management, pointers, and basic software development.",
+        "prerequisites": ["COMPSCI 33"]
+      },
+      {
+        "courseCode": "COMPSCI 46",
+        "courseTitle": "Data Structures and Algorithms",
+        "description": "Covers advanced data structures and algorithm analysis techniques.",
+        "prerequisites": ["COMPSCI 45C"]
+      },
+      {
+        "courseCode": "COMPSCI 121",
+        "courseTitle": "Information Retrieval",
+        "description": "Introduction to information retrieval techniques, including indexing, ranking, and search engine technologies.",
+        "prerequisites": ["COMPSCI 46"]
+      },
+      {
+        "courseCode": "ICS 6B",
+        "courseTitle": "Boolean Algebra and Logic",
+        "description": "Introduction to Boolean algebra and symbolic logic. Applications in computer science and problem-solving.",
+        "prerequisites": []
+      },
+      {
+        "courseCode": "ICS 31",
+        "courseTitle": "Introduction to Programming",
+        "description": "Covers the basics of programming using Python. Topics include control structures, functions, and data structures.",
+        "prerequisites": []
+      },
+      {
+        "courseCode": "ICS 32",
+        "courseTitle": "Intermediate Programming",
+        "description": "Builds upon programming concepts introduced in ICS 31. Focuses on object-oriented programming, recursion, and data structures.",
+        "prerequisites": ["ICS 31"]
+      },
+      {
+        "courseCode": "ICS 33",
+        "courseTitle": "Intermediate Programming and Problem Solving",
+        "description": "Advanced programming topics, including data structures, algorithm analysis, and software engineering principles.",
+        "prerequisites": ["ICS 32"]
+      },
+      {
+        "courseCode": "ICS 45C",
+        "courseTitle": "Programming in C/C++",
+        "description": "Introduction to programming in C/C++. Covers memory management, pointers, and basic software development.",
+        "prerequisites": ["ICS 33"]
+      },
+      {
+        "courseCode": "ICS 46",
+        "courseTitle": "Data Structure Implementation and Analysis",
+        "description": "Covers the design, implementation, and analysis of fundamental data structures, including stacks, queues, and trees.",
+        "prerequisites": ["ICS 33", "ICS 45C"]
+      }
+    ]
+  }
+  

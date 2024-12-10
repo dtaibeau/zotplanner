@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZotPlanner</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZotPlanner</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to ZotPlanner</h1>
-    </header>
-    <main id="app"></main>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/feature1.js"></script>
+  <header>
+    <h1>Welcome to ZotPlanner</h1>
+  </header>
+
+  <main id="app">
+    <!-- Course Search Section -->
+    <section id="courseSearchSection">
+      <h2>Course Search</h2>
+      <input
+        type="text"
+        id="courseSearchInput"
+        placeholder="Enter course code or title (e.g., COMPSCI 161)"
+      />git
+      <button id="courseSearchButton">Search</button>
+      <div id="courseResults"></div>
+    </section>
+  </main>
+
+  <!-- JavaScript Files -->
+  <script src="assets/js/feature1.js"></script>
+  <script src="assets/js/courseSearch.js"></script>
+  <script src="assets/js/prerequisiteTracker.js"></script>
 </body>
 </html>
