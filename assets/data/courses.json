@@ -1,31 +1,31 @@
 {
     "courses": [
       {
-        "courseCode": "COMPSCI 161",
+        "courseCode": "CS 161",
         "courseTitle": "Design and Analysis of Algorithms",
         "description": "Introduction to the design and analysis of algorithms. Covers topics such as sorting, searching, dynamic programming, and graph algorithms.",
         "prerequisites": ["COMPSCI 132", "COMPSCI 143A"]
       },
       {
-        "courseCode": "COMPSCI 143A",
+        "courseCode": "CS 143A",
         "courseTitle": "Principles of Operating Systems",
         "description": "Introduction to the principles of operating systems, including processes, synchronization, scheduling, file systems, and memory management.",
         "prerequisites": ["COMPSCI 45C"]
       },
       {
-        "courseCode": "COMPSCI 45C",
+        "courseCode": "CS 45C",
         "courseTitle": "Programming in C/C++",
         "description": "Introduction to programming in C/C++. Covers memory management, pointers, and basic software development.",
         "prerequisites": ["COMPSCI 33"]
       },
       {
-        "courseCode": "COMPSCI 46",
+        "courseCode": "ICS 46",
         "courseTitle": "Data Structures and Algorithms",
         "description": "Covers advanced data structures and algorithm analysis techniques.",
         "prerequisites": ["COMPSCI 45C"]
       },
       {
-        "courseCode": "COMPSCI 121",
+        "courseCode": "CS 121",
         "courseTitle": "Information Retrieval",
         "description": "Introduction to information retrieval techniques, including indexing, ranking, and search engine technologies.",
         "prerequisites": ["COMPSCI 46"]

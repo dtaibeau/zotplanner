@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZotPlanner</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="stylefile.css">
 </head>
 <body>
   <header>
@@ -12,43 +12,127 @@
   </header>
 
   <main id="app">
+    <!-- Degree Progress Tracker Section -->
+    <div id="progress-tracker-container">
+      <section id="degree-progress-tracker">
+        <h2>Degree Progress Tracker</h2>
+        <div class="progress-bar-container">
+          <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        <p id="progress-percentage">0% Completed</p>
+      </section>
+    </div>
 
-    <!-- Course Search Section -->
-    <section id="courseSearchSection">
-      <h2>Course Search</h2>
-      <label for="courseSearchInput">Enter Course Code or Title:</label>
-      <input
-        type="text"
-        id="courseSearchInput"
-        placeholder="Enter course code or title (e.g., COMPSCI 161)"
-      />
-      <button id="courseSearchButton">Search</button>
-      <div id="courseResults"></div>
-    </section>
+    <!-- Search Sections -->
+    <div id="search-sections-container">
+      <!-- Course Search Section -->
+      <section id="courseSearchSection" class="search-section">
+        <h2>Course Search</h2>
+        <div class="search-bar">
+          <label for="courseSearchInput">Enter Course Code or Title:</label>
+          <input
+            type="text"
+            id="courseSearchInput"
+            placeholder="Enter course code or title (e.g., COMPSCI 161)"
+          />
+          <button id="courseSearchButton">Search</button>
+        </div>
+        <div id="courseResults"></div>
+      </section>
 
-     <!-- Prerequisite Tracker Section -->
-    <section id="prerequisite-tracker">
-      <h2>Prerequisite Tracker</h2>
-      <label for="course-input">Enter Course Code:</label>
-      <input type="text" id="course-input" placeholder="e.g., COMPSCI 161" />
-      <button id="check-prerequisites">Check Prerequisites</button>
-      <div id="prerequisite-results"></div>
-   </section>
+      <!-- Prerequisite Tracker Section -->
+      <section id="prerequisite-tracker" class="search-section">
+        <h2>Prerequisite Tracker</h2>
+        <div class="search-bar">
+          <label for="course-input">Enter Course Code:</label>
+          <input type="text" id="course-input" placeholder="e.g., COMPSCI 161" />
+          <button id="check-prerequisites">Check Prerequisites</button>
+        </div>
+        <div id="prerequisite-results"></div>
+      </section>
 
+      <!-- Rate My Professor Section -->
+      <section id="rateMyProfessor" class="search-section">
+        <h2>Rate My Professor</h2>
+        <div class="search-bar">
+          <label for="professor-input">Enter Professor Name:</label>
+          <input
+            type="text"
+            id="professor-input"
+            placeholder="e.g., Michael Shindler"
+          />
+          <button id="search-professor">Search</button>
+        </div>
+        <div id="professor-results"></div>
+      </section>
+    </div>
 
-    <!-- Rate My Professor Section -->
-    <section id="rateMyProfessor">
-      <h2>Rate My Professor</h2>
-      <label for="professor-input">Enter Professor Name:</label>
-      <input type="text" id="professor-input" placeholder="e.g., Michael Shindler" />
-      <button id="search-professor">Search</button>
-      <div id="professor-results"></div>
-    </section>
+    <!-- Yearly Course Plan Section -->
+    <div id="yearly-course-plan-container">
+      <section id="yearly-course-plan">
+        <h2>Yearly Course Plan</h2>
+        <table id="course-plan-table">
+          <thead>
+            <tr>
+              <th>Term</th>
+              <th>Courses</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fall</td>
+              <td id="fall-courses"></td>
+            </tr>
+            <tr>
+              <td>Winter</td>
+              <td id="winter-courses"></td>
+            </tr>
+            <tr>
+              <td>Spring</td>
+              <td id="spring-courses"></td>
+            </tr>
+            <tr>
+              <td>Summer</td>
+              <td id="summer-courses"></td>
+            </tr>
+          </tbody>
+        </table>
+        <label for="term-select">Assign Course to Term:</label>
+        <select id="term-select">
+          <option value="Fall">Fall</option>
+          <option value="Winter">Winter</option>
+          <option value="Spring">Spring</option>
+          <option value="Summer">Summer</option>
+        </select>
+        <input type="text" id="assign-course-input" placeholder="Enter Course Code" />
+        <button id="assign-course-button">Assign</button>
+        <button id="save-plan-button">Save Plan</button>
+        <button id="load-plan-button">Load Plan</button>
+        <button id="complete-course-button">Complete a Course</button>
+        <button id="remove-completed-course-button">Remove a Completed Course</button>
+
+      </section>
+    </div>
   </main>
 
   <!-- JavaScript Files -->
   <script src="assets/js/courseSearch.js"></script>
   <script src="assets/js/prerequisiteTracker.js"></script>
   <script src="assets/js/rateMyProfessor.js"></script>
+  <script src="assets/js/courseAssignment.js"></script>
+  <script src="assets/js/progressBar.js"></script>
+  <script>
+    function updateProgressTracker() {
+      const progressPercentage = Math.round((completedCourses / totalCourses) * 100);
+      const progressBar = document.getElementById("progress-bar");
+      const progressText = document.getElementById("progress-percentage");
+
+      progressBar.style.width = `${progressPercentage}%`;
+      progressText.textContent = `${progressPercentage}% Completed`;
+    }
+
+    // Example: Add a completed course (can be tied to course selection in future)
+    updateProgressTracker(); // Call the function to reflect updates
+  </script>
 </body>
 </html>
